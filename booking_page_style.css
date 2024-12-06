@@ -1,0 +1,144 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: .9rem;
+    overflow-x: hidden;
+    scroll-padding: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 5rem 9%;
+    display: flex;
+    
+}
+
+
+.btn{
+    display: flex ;
+    justify-content: center;
+
+    max-width: 200px;  /* Set the maximum width of the buttons */
+    width: 100%;      
+
+    
+    margin-top: 1rem;
+    margin-left: 15rem ;
+    padding: .5rem;
+    padding-top: .6rem;
+    padding-right: .6rem;
+    border: solid;
+    border-radius: .5rem;
+    box-shadow: 0  .5rem  1.5rem rgba(0, 0, 0, .1);
+    color: burlywood;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background: white;
+}
+
+.btn span{
+    padding: .3rem .6rem;
+    border-radius: 5rem;
+    background: burlywood;
+    color: white;
+    margin-left: .5rem;
+}
+
+.btn:hover{ /*hover transition for the button*/
+    background: burlywood;
+    color: white;
+}
+
+.btn:hover span{ /*hover transition for the button arrow*/
+    color: burlywood;
+    background-color: white;
+    margin-left: 1rem; /*make the button grow in length-animation*/
+}
+
+
+
+.booking-container{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+
+
+.box-booking{
+    background: white;
+    border-radius: .5rem;
+    box-shadow:  0  .5rem  1.5rem rgba(0, 0, 0, .1) ;
+    border: solid burlywood;
+    padding: 2.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+img{
+    width: 40%;
+    margin-left: 12rem;
+    padding-top: 0px;
+}
+
+.box-booking h3{
+    font-size: 2.5rem;
+    padding: 1rem ;
+    text-align: center;
+    
+}
+
+.box-booking p{
+    color: rgb(156, 152, 152);
+    font-size: 1.4rem;
+    line-height: 2;
+    text-align: center;
+    
+}
+
+
+.booking{
+    padding-top: 10rem;
+    display: grid;
+    align-items: center;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+
+}
+
+.success{
+    
+    color: rgb(12, 201, 12);
+    background-color: #9adbae71;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+
+
+
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+  
+  
+}

@@ -1,0 +1,409 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: .9rem;
+    overflow-x: hidden;
+    scroll-padding: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(odd){
+    background: rgb(246, 244, 244); /*every even section block should be a different colour than the rest*/
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: 2px 2px rgba(228, 181, 116, 0.4);
+    text-transform: uppercase;
+    color: black;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: rgb(203, 143, 64);
+}
+
+.btn{
+    display: inline-block ;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-right: .6rem;
+    border: solid;
+    border-radius: .5rem;
+    box-shadow: 0  .5rem  1.5rem rgba(0, 0, 0, .1);
+    color: burlywood;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background: white;
+}
+
+.btn span{
+    padding: .3rem .6rem;
+    border-radius: 5rem;
+    background: burlywood;
+    color: white;
+    margin-left: .5rem;
+}
+
+.btn:hover{ /*hover transition for the button*/
+    background: burlywood;
+    color: white;
+}
+
+.btn:hover span{ /*hover transition for the button arrow*/
+    color: burlywood;
+    background-color: white;
+    margin-left: 1rem; /*make the button grow in length-animation*/
+}
+
+.header{
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0  .5rem  1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white ;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: black;
+}
+.header i{
+    color: burlywood;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: gray;
+    margin-left: 2rem;
+}
+.header .navbar a:hover{
+    color: burlywood;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: white;
+    color: burlywood;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none; /*should only display on a smaller screen*/
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .1rem;
+    padding-top: 10rem ;
+}
+
+.home .image{
+    flex: 1rem;
+    
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.home .content{
+    flex: 1rem;
+    
+}
+
+.home .content h3{
+    font-size: 2.5rem;
+    color: black;
+    line-height: 1.2;
+    text-shadow: 2px 2px rgba(228, 181, 116, 0.4);
+}
+
+.home .content p{
+    font-size: 1rem;
+    color: rgb(70, 69, 69);
+    line-height: 1.2;
+    padding: .2rem 4;
+}
+
+.icon-cont{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.icon-cont .icons{
+    border: solid rgb(212, 144, 56);
+    box-shadow:  0  .5rem  1.5rem rgba(0, 0, 0, .1) ;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem ;
+}
+
+.icons i{
+    font-size: 4.5rem;
+    color: rgb(178, 117, 38);
+    padding-bottom: .5rem;
+
+}
+
+.icons h3{
+    font-size: 3.5rem;
+    padding: .5rem;
+    text-shadow: 5px 5px rgba(228, 181, 116, 0.4);
+}
+.icons p{
+    color: rgb(121, 113, 113);
+    font-size: 1.3rem;
+}
+
+.services .box-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+
+}
+
+
+
+.services .box-container .box{
+    background: white;
+    border-radius: .5rem;
+    box-shadow:  0  .5rem  1.5rem rgba(0, 0, 0, .1) ;
+    border: solid burlywood;
+    padding: 2.5rem;
+}
+
+.services .box-container .box i{
+    color: burlywood;
+    font-size: 5rem;
+    padding-bottom: .5rem;
+
+}
+
+.services .box-container .box h3{
+    color: black;
+    font-size: 2.5rem;
+    padding: 1rem 0 ;
+    
+}
+
+.services .box-container .box p{
+    color: rgb(156, 152, 152);
+    font-size: 1.4rem;
+    line-height: 2;
+    
+}
+
+.book{
+    padding: 4rem;
+    
+}
+
+.book .row{
+    margin-right: 5rem;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.book .row .image{
+    flex: 1 1 45rem;
+}
+
+.book .row .image img{
+    width: 90%;
+
+}
+
+.book .row form{
+    flex: 1 1 45rem;
+    background: white;
+    border: solid rgb(184, 140, 82);
+    box-shadow:  0  .5rem  1.5rem rgba(0, 0, 0, .1) ;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+
+
+}
+
+.book .row form h3{
+    color: black;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+
+}
+
+.book .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: solid rgb(207, 134, 39);
+    font-size: 1.6rem ;
+    color: black;
+    text-transform: none;
+    padding: 1rem;
+    
+}
+
+.book .row form .btn{
+    padding: 1rem 5rem;
+}
+
+
+
+
+
+
+.errorMsg.active{
+    display: block;
+    color: red;
+    background-color: #deaeb78f;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 768px){
+    #menu-btn{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border: solid burlywood;
+        border-radius: .5rem;
+        width: 30rem;
+        background: white;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+
+    .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+
+    }
+    .navbar a:hover{
+        box-shadow: 0  .5rem  1.5rem rgba(0, 0, 0, .1);
+    }
+
+    .home {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        font-size: 65px;
+    }
+
+    .home .image,
+    .home .content {
+        flex: 1 2 auto; /* Allow both items to shrink and grow */
+        max-width: 100%; /* Take full width in column layout */
+        text-align: center; /* Center text */
+    }
+
+    .image img {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .home {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        font-size: 65px;
+    }
+
+    .home .image,
+    .home .content {
+        flex: 1 2 auto; /* Allow both items to shrink and grow */
+        max-width: 100%; /* Take full width in column layout */
+        text-align: center; /* Center text */
+    }
+
+    .image img {
+        width: 80%;
+    }
+}
+
+
+
